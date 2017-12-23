@@ -17,6 +17,11 @@
 #include <X11/Xlib.h>
 #include "Window.hpp"
 
+#ifndef VOXEL_LUMOS_WINDOW_WINDOW_XCB_HPP
+#define VOXEL_LUMOS_WINDOW_WINDOW_XCB_HPP
+
+namespace Voxx::Lumos {
+
 /// The WindowXcb class defines an implementation of the Window interface by
 /// using the XCB library for window related functionality.
 class WindowXcb : Window<WindowXcb> {
@@ -64,3 +69,7 @@ class WindowXcb : Window<WindowXcb> {
  	/// \param extent The extent of the window.
  	void setup(Extent2d extent);
 };
+
+} // namespace Voxx::Lumos
+
+#endif // VOXEL_LUMOS_WINDOW_WINDOW_XCB_HPP

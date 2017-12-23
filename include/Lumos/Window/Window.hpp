@@ -16,6 +16,11 @@
 #include <memory>
 #include <Lumos/Geometry/Extent.hpp>
 
+#ifndef VOXEL_LUMOS_WINDOW_WINDOW_HPP
+#define VOXEL_LUMOS_WINDOW_WINDOW_HPP
+
+namespace Voxx::Lumos {
+
 /// The WindowTraits class defines the traits of all windows.
 /// \tparam WindowType The type of the window to get the traits of.
 template <typename WindowImpl>
@@ -56,3 +61,7 @@ class Window  {
  		return static_cast<const WindowImpl*>(this);
  	}
 };
+
+} // namespace Voxx::Lumos
+
+#endif // VOXEL_LUMOS_WINDOW_WINDOW_HPP

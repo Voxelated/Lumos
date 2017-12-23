@@ -16,6 +16,8 @@
 #ifndef VOXEL_LUMOS_EVENT_EVENT_MANAGER_HPP
 #define VOXEL_LUMOS_EVENT_EVENT_MANAGER_HPP
 
+#include <vector>
+
 namespace Voxx::Lumos {
 
 /// The EventManager class defines a class which manages different types of
@@ -23,7 +25,9 @@ namespace Voxx::Lumos {
 /// Objects can be added as sources which allow them to post events to the
 /// manager, and can also be added as sinks where they can consume the events.
 class EventManager {
-	
+
+ private:
+ 	std::vector<KeyEvent> KeyEvents{0};	//!< Pending key events.
 };
 
 } // namespace Voxx::Lumos

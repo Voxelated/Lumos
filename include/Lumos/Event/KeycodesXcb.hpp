@@ -16,6 +16,8 @@
 #ifndef VOXEL_LUMOS_EVENT_KEYCODES_XCB_HPP
 #define VOXEL_LUMOS_EVENT_KEYCODES_XCB_HPP
 
+namespace Voxx::Lumos {
+
 enum class KeyEventKind : uint8_t {
 	Esc 	= 0x09,
 	W 		= 0x19,
@@ -30,5 +32,7 @@ enum class KeyEventKind : uint8_t {
 	Sub 	= 0x52,
 	Add 	= 0x56,
 };
+
+} // namespace Voxx::Lumos
 
 #endif // VOXEL_LUMOS_EVENT_KEYCODES_XCB_HPP

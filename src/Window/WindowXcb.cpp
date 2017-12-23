@@ -21,6 +21,8 @@
 
 #include "WindowXcb.hpp"
 
+namespace Voxx::Lumos {
+
 WindowXcb::WindowResource {
  	/// The type of a pointer to the connection to the server.
  	using ConnectionPtr 	= xcb_connection_t*;
@@ -186,3 +188,5 @@ void WindowXcb::pollForEvent(EventManager& eventManager) {
 	}
 	free(event);
 }
+
+} // namespace Voxx::Lumos

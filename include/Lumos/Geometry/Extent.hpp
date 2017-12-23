@@ -14,11 +14,16 @@
 //
 //==------------------------------------------------------------------------==//
 
+#ifndef VOXEL_LUMOS_GEOMETRY_EXTENT_HPP
+#define VOXEL_LUMOS_GEOMETRY_EXTENT_HPP
+
+namespace Voxx::Lumos {
+
 /// The Extent struct defines an object which holds the size of single
 /// dimension.
 struct Extent {
 	int16_t length; //!< The length of the extent.
-}
+};
 
 /// The Extent2d struct defines an object which holds the sizes of the
 /// dimensions for two dimensions.
@@ -34,3 +39,7 @@ struct Extent3d {
 	int16_t height;	//!< The height of the extent.
 	int16_t depth; 	//!< The depth of the extent.
 };
+
+} // namespace Voxx::Lumos
+
+#endif // VOXEL_LUMOS_GEOMETRY_EXTENT_HPP
